@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RugPengu Clicker</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game" style="font-family: Inter, system-ui, sans-serif;">
+        <h1>RugPengu Clicker 🐧</h1>
+        <p id="desc">Click the penguin to collect <strong>fake</strong> PENGU. Scores save in your browser. Share your score to get OG perks!</p>
+
+        <div id="walletBox">
+            <div><strong>Wallet</strong>: <span id="walletAddr"></span></div>
+            <div><strong>PENGU</strong>: <span id="balance">0</span></div>
+        </div>
+
+        <button id="penguBtn" aria-label="Click penguin" title="Click me!">🐧</button>
+        <div id="bonusMsg" aria-live="polite"></div>
+
+        <div style="margin-top:18px;">
+            <button id="resetBtn">Reset Score</button>
+        </div>
+
+        <h3>Activity</h3>
+        <ul id="log" style="max-height:140px; overflow:auto; padding-left:18px;"></ul>
+
+        <p style="font-size:12px; color:#666;">This is a fake in-browser toy — no real crypto moves. Play for fun.</p>
+    </div>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+</body>
+</html>
